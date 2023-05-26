@@ -1,0 +1,8 @@
+# virtual env
+.venv
+
+# notebooks
+*.ipynb
+
+# setuptools
+*.egg-info
