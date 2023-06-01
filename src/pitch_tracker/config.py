@@ -9,6 +9,9 @@ class Config:
         with open(config_path) as f:
             self.config = yaml.safe_load(f)
 
+    def get_sampling_rate(self):
+        return self.config["sampling_rate"]
+
     def get_audio_file_config(self):
         return self.config["audio_file"]
 
@@ -20,3 +23,6 @@ class Config:
 
     def get_beat_config(self):
         return self.config["beat"]
+
+    def get_midi_config(self):
+        return self.config["midi"]

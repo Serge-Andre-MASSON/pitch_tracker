@@ -12,7 +12,7 @@ class AudioFile:
         self.sampling_rate = sampling_rate
 
     def get_waveform(self):
-        """Return a waveform of the audio. THe result will be cast to mono."""
+        """Return a waveform of the audio. The result will be cast to mono."""
         with open(self.audio_file_path, "rb") as f:
             waveform, _ = librosa.load(
                 self.audio_file_path,

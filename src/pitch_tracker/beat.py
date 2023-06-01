@@ -2,7 +2,7 @@ import numpy as np
 from numpy.testing import assert_array_equal
 from sklearn.cluster import KMeans
 
-from waveform_features import Amplitude, Frequency
+from pitch_tracker.waveform_features import Amplitude, Frequency
 
 
 class Beat:
