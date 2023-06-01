@@ -1,0 +1,4 @@
+sampling_rate: &sampling_rate 44100
+
+audio_file:
+  sampling_rate: *sampling_rate
