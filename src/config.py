@@ -17,3 +17,6 @@ class Config:
 
     def get_frequency_config(self):
         return self.config["waveform_features"]["frequency"]
+
+    def get_beat_config(self):
+        return self.config["beat"]

@@ -9,3 +9,7 @@ waveform_features:
     window_size_inverse_ratio: 40
   frequency:
     sampling_rate: *sampling_rate
+
+beat:
+  sampling_rate: *sampling_rate
+  min_samples_between_beats: 6000
