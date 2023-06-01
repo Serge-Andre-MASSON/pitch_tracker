@@ -2,3 +2,10 @@ sampling_rate: &sampling_rate 44100
 
 audio_file:
   sampling_rate: *sampling_rate
+
+waveform_features:
+  amplitude: 
+    sampling_rate: *sampling_rate
+    window_size_inverse_ratio: 40
+  frequency:
+    sampling_rate: *sampling_rate

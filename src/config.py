@@ -11,3 +11,9 @@ class Config:
 
     def get_audio_file_config(self):
         return self.config["audio_file"]
+
+    def get_amplitude_config(self):
+        return self.config["waveform_features"]["amplitude"]
+
+    def get_frequency_config(self):
+        return self.config["waveform_features"]["frequency"]
