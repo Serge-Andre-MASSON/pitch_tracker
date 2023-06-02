@@ -13,3 +13,7 @@ waveform_features:
 beat:
   sampling_rate: *sampling_rate
   min_samples_between_beats: 6000
+
+midi:
+  sampling_rate: *sampling_rate
+  sound_font: "/usr/share/sounds/sf2/FluidR3_GM.sf2"
