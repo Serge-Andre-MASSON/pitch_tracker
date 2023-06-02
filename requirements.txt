@@ -1,6 +1,5 @@
 librosa==0.10.0.post2
 mido==1.2.10
-pip-chill==1.0.3
 pyyaml==6.0
 # appdirs==1.4.4 # Installed as dependency for pooch
 # audioread==3.0.0 # Installed as dependency for librosa
