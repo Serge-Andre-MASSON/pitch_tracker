@@ -12,9 +12,6 @@ description = "An automatic transcription algorithm for guitar."
 readme = "README.md"
 requires-python = ">=3.10"
 
-dependencies = [
-]
-
 
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -25,11 +22,16 @@ classifiers = [
     "machine learning"
 ]
 
-[project.scripts]
-pitch = "cli:cli"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
 
 [tool.setuptools.packages.find]
 where = ["src"] 
 
-# [project.urls]
-# "Homepage" = "https://github.com/Serge-Andre-MASSON/..."
+# [project.scripts]
+# pitch = "cli:cli"
+
+[project.urls]
+"Homepage" = "https://github.com/Serge-Andre-MASSON/pitch_tracker"
