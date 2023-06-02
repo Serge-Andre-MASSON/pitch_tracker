@@ -1,7 +1,6 @@
 from pathlib import Path
 
 import librosa
-from IPython.display import Audio
 
 
 class AudioFile:
@@ -19,7 +18,3 @@ class AudioFile:
                 sr=self.sampling_rate
             )
         return waveform
-
-    def show_player(self):
-        """Display an player when called from a notebook."""
-        return Audio(self.audio_file_path)

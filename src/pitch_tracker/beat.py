@@ -1,5 +1,4 @@
 import numpy as np
-from numpy.testing import assert_array_equal
 from sklearn.cluster import KMeans
 
 from pitch_tracker.waveform_features import Amplitude, Frequency
@@ -7,7 +6,7 @@ from pitch_tracker.waveform_features import Amplitude, Frequency
 
 class Beat:
     def __init__(self, amplitude: Amplitude, frequency: Frequency, sampling_rate, min_samples_between_beats):
-        assert_array_equal(amplitude.waveform, frequency.waveform)
+        np.testing.assert_array_equal(amplitude.waveform, frequency.waveform)
         self.waveform = amplitude.waveform
 
         self.waveform_length = self.waveform.size
