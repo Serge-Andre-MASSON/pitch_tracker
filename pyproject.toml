@@ -30,6 +30,10 @@ dependencies = {file = ["requirements.txt"]}
 [tool.setuptools.packages.find]
 where = ["src"] 
 
+
+[tool.setuptools.package-data]
+pitch_tracker = ["*.csv"]
+
 # [project.scripts]
 # pitch = "cli:cli"
 
