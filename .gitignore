@@ -7,11 +7,6 @@
 # setuptools
 *.egg-info
 
-# audio files
-*.wav
-*.mid
-wavs_for_tests
-
 # python
 __pycache__
 
