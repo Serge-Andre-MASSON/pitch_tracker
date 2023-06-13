@@ -9,6 +9,9 @@ class Beat:
         np.testing.assert_array_equal(amplitude.waveform, frequency.waveform)
         self.waveform = amplitude.waveform
 
+        self.amplitude = amplitude
+        self.frequency = frequency
+
         self.waveform_length = self.waveform.size
         self.amplitude_beat = AmplitudeBeat(amplitude)
         self.frequency_beat = FrequencyBeat(frequency)
